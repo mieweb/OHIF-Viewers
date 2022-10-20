@@ -75,6 +75,12 @@ const commandsModule = ({ servicesManager }) => {
   }
 
   const actions = {
+    nextPageViewport: ({ viewports }) => {
+      const event = new window.CustomEvent('updateNextPageImages', {
+        detail: viewports,
+      });
+      window.dispatchEvent(event);
+    },
     getActiveViewportEnabledElement: () => {
       return _getActiveViewportEnabledElement();
     },
@@ -426,6 +432,11 @@ const commandsModule = ({ servicesManager }) => {
   };
 
   const definitions = {
+    nextPageViewport: {
+      commandFn: actions.nextPageViewport,
+      storeContexts: ['viewports'],
+      options: {},
+    },
     setWindowLevel: {
       commandFn: actions.setWindowLevel,
       storeContexts: [],

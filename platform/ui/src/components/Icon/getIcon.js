@@ -28,6 +28,7 @@ import logoOhifSmall from './../../assets/icons/logo-ohif-small.svg';
 import magnifier from './../../assets/icons/magnifier.svg';
 import notificationwarningDiamond from './../../assets/icons/notificationwarning-diamond.svg';
 import pencil from './../../assets/icons/pencil.svg';
+import powerOff from './../../assets/icons/power-off.svg';
 import profile from './../../assets/icons/profile.svg';
 import pushLeft from './../../assets/icons/push-left.svg';
 import pushRight from './../../assets/icons/push-right.svg';
@@ -68,6 +69,8 @@ import editPatient from './../../assets/icons/edit-patient.svg';
 import oldTrash from './../../assets/icons/old-trash.svg';
 import oldPlay from './../../assets/icons/old-play.svg';
 import oldStop from './../../assets/icons/old-stop.svg';
+import oldAPlay from './../../assets/icons/aplay-play.svg';
+import oldAStop from './../../assets/icons/aplay-stop.svg';
 
 const ICONS = {
   'arrow-down': arrowDown,
@@ -97,6 +100,7 @@ const ICONS = {
   exclamation: exclamation,
   'notificationwarning-diamond': notificationwarningDiamond,
   pencil: pencil,
+  'power-off': powerOff,
   profile: profile,
   'push-left': pushLeft,
   'push-right': pushRight,
@@ -137,6 +141,8 @@ const ICONS = {
   'old-trash': oldTrash,
   'old-play': oldPlay,
   'old-stop': oldStop,
+  'aplay-play': oldAPlay,
+  'aplay-stop': oldAStop,
 };
 
 /**

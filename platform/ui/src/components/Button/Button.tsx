@@ -240,6 +240,7 @@ Button.propTypes = {
     'secondary',
     'white',
     'black',
+    'light',
   ]),
   /** Whether the button should have full width  */
   fullWidth: PropTypes.bool,
