@@ -237,6 +237,15 @@ const definitions = [
     commandName: 'setCornerstoneLayout',
     context: 'ACTIVE_VIEWPORT::VTK',
   },
+  {
+    id: 'NextPage',
+    label: 'Next >>>',
+    icon: 'angle-double-down',
+    //
+    type: TOOLBAR_BUTTON_TYPES.COMMAND,
+    commandName: 'nextPageViewport',
+    //context: 'ACTIVE_VIEWPORT::FLIPPING',
+  },
 ];
 
 export default {

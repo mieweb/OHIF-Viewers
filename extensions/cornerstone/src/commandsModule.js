@@ -20,6 +20,12 @@ const refreshCornerstoneViewports = () => {
 
 const commandsModule = ({ servicesManager }) => {
   const actions = {
+    nextPageViewport: ({ viewports }) => {
+      const event = new window.CustomEvent('updateNextPageImages', {
+        detail: viewports,
+      });
+      window.dispatchEvent(event);
+    },
     rotateViewport: ({ viewports, rotation }) => {
       const enabledElement = getEnabledElement(viewports.activeViewportIndex);
 
@@ -297,6 +303,12 @@ const commandsModule = ({ servicesManager }) => {
   };
 
   const definitions = {
+    nextPageViewport: {
+      commandFn: actions.nextPageViewport,
+      storeContexts: ['viewports'],
+      options: {},
+      context: 'VIEWER',
+    },
     jumpToImage: {
       commandFn: actions.jumpToImage,
       storeContexts: [],

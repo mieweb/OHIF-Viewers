@@ -22,6 +22,9 @@ export const getActiveContexts = createSelector(
       const activeViewportExtension = `ACTIVE_VIEWPORT::${activeViewportPluginName.toUpperCase()}`;
       activeContexts.push(activeViewportExtension);
     }
+    if (layoutViewports.length > 1) {
+      activeContexts.push('ACTIVE_VIEWPORT::FLIPPING');
+    }
 
     return activeContexts;
   }
